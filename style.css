@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #ececec;
+  font-family: "Assistant", sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+form {
+  background: #ffffff;
+  width: 35em;
+  padding: 5px;
+  box-shadow: 0 5px 10px #333333;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+.form-control label {
+  display: block;
+  margin: 3px 5px;
+  font-size: 25px;
+}
+.form-control input {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  font-size: 15px;
+  border: 1px solid #a9a9a9;
+}
+input:hover {
+  border: 2px solid #000000;
+}
+small {
+  visibility: hidden;
+  color: #ff0000;
+}
+.form-control.error small {
+  visibility: visible;
+}
+button {
+  margin: 10px auto;
+  width: 100%;
+  color: #fff;
+  background: #187bcd;
+  border: none;
+  padding: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.form-control.success input{
+  border: 2px solid #00ff00;
+}
+.form-control.error input{
+  border: 2px solid #ff0000;
+}
